@@ -1,6 +1,3 @@
-/* ========================================= */
-/* Black and White Template By Bootstrapious.com      */
-/* ========================================= */
 html {
   height: 100%;
 }
@@ -24,9 +21,9 @@ body {
   background-attachment: fixed;
 }
 .intro h1 {
-    text-align: center;
-    color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 .intro h2,
 .intro h3,
@@ -55,14 +52,14 @@ section {
   top: 0;
   background: #000;
   z-index: 2;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  opacity: 0.4;
+  filter: alpha(opacity=40);
 }
 .heading {
   margin-bottom: 40px;
 }
 .heading:after {
-  content: " ";
+  content: ' ';
   display: block;
   width: 100px;
   height: 1px;
@@ -149,7 +146,7 @@ p.social a i {
 /*p.social a.facebook {
   background-color: #ccc;
 }*/
-p.social a.github{
+p.social a.github {
   background-color: #333;
 }
 p.social a.linkedin {
@@ -291,7 +288,7 @@ NAVBAR
 }
 /* navbar */
 .navbar {
-  font-family: "Cardo", "Times New Roman", Times, serif;
+  font-family: 'Cardo', 'Times New Roman', Times, serif;
   font-style: italic;
   min-height: 40px;
   margin-bottom: 0;
@@ -557,7 +554,7 @@ NAVBAR
 }
 /* scaffolding */
 body {
-  font-family: "Cardo", "Times New Roman", Times, serif;
+  font-family: 'Cardo', 'Times New Roman', Times, serif;
   font-size: 16px;
   line-height: 1.42857143;
   color: #333333;
@@ -595,7 +592,7 @@ hr {
   text-align: right;
 }
 .breadcrumb > li + li:before {
-  content: ">\00a0";
+  content: '>\00a0';
   color: #cccccc;
 }
 .breadcrumb > .active {
@@ -727,8 +724,10 @@ label {
 .form-control:focus {
   border-color: #444444;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(68, 68, 68, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(68, 68, 68, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(68, 68, 68, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(68, 68, 68, 0.6);
 }
 .form-group {
   margin-bottom: 20px;
