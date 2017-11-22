@@ -4,10 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>J. Flaherty Portfolio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
+
+  <title>Jeannie F. Flaherty</title>
+
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="favicon.png">
+
   <!-- Bootstrap and Font Awesome css-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -15,18 +20,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
   <!-- theme stylesheet-->
   <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-
   <!-- Custom stylesheet - for your changes-->
   <link rel="stylesheet" href="css/custom.css">
-
-  <!-- Favicon-->
-  <link rel="shortcut icon" href="favicon.png">
 
 </head>
 
 <body data-spy="scroll" data-target="#navigation" data-offset="100">
   <!-- intro-->
-  <section id="intro" style="background-image: url('img/Texas.jpg');" class="intro">
+  <section id="intro" style="background-image: url('img/texas.jpg');" class="intro">
     <div class="overlay"></div>
     <div class="content">
       <div class="container clearfix">
@@ -57,7 +58,6 @@
               <li><a href="#about">About </a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
-
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -84,7 +84,7 @@
           <p>In my spare time, when I'm not solving elusive web development puzzles, I enjoy time with my supportive husband and three dogs. Fun for me is to train and compete in canine agility. </p>
           <br>
 
-          <h4><a href="documents/jflahertyVitaetech.pdf" target="blank" </i>Download My Resume</a></h4>
+          <h5><a href="documents/jflahertyVitaetech.pdf" target="blank" </i>Download My Resume</a></h5>
         </div>
 
         <div class="col-md-5 col-md-offset-1">
@@ -96,7 +96,7 @@
   <!-- about end-->
 
   <!-- Services-->
-  <section id="services" style="background-color: #f9f7e8">
+  <section id="services" style="background-color: #EFEBD9">
     <div class="container">
       <div class="row services">
         <div class="col-md-12">
@@ -153,19 +153,15 @@
 
       </div>
       <div class="row">
-
-
         <div class="col-sm-4">
           <div class="box"><a href="https://jf-utex.github.io/trainTime/" title="" data-gallery="portfolio" data-title="Train Application" data-footer="Calculates train arrival time using moment.js and calculations in JavaScript"><img src="img/traintime.png" alt="" class="img-responsive"></a></div>
         </div>
         <div class="col-sm-4">
           <div class="box"><a href="https://warm-beach-51608.herokuapp.com/" title="" data-gallery="portfolio" data-title="Front end and Back End" data-footer=""><img src="img/burger app.png" alt="" class="img-responsive"></a></div>
         </div>
-
         <div class="col-sm-4">
           <div class="box"><a href="https://github.com/jf-utex" title="" data-gallery="portfolio" data-title="GitHub Link" data-footer=""><img src="img/github.png" alt="" class="img-responsive"></a></div>
         </div>
-
       </div>
     </div>
   </section>
@@ -173,36 +169,57 @@
   <!-- Portfolio / gallery end-->
 
   <!-- contact-->
-  <section id="contact" style="background-color: #f9f7e8">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="heading">Contact Me</h2>
-          <div class="row">
 
+  <section id="contact" style="background-color: #EFEBD9">
+    <div class="container clearfix">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card" id="social">
+
+
+            <h2 class="heading">Contact Me</h2>
 
             <div class="col-md-2">
-
               <p class="social">
-                <!-- <a href="#" title="" class="facebook"><i class="fa fa-facebook"></i></a> -->
-                <a href="https://www.linkedin.com/in/jeannie-flaherty-369427122/" title="" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/jf-utex?tab=repositories" title="" class="github"><i class="fa fa-github"></i></a>
-                <a href="mailto:jflaherty@utexas.edu" title="" class="email"><i class="fa fa-envelope"></i></a></p>
+                <div class="box"><a href="https://www.linkedin.com/in/jeannie-flaherty-369427122/" title="" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </p>
             </div>
+            <div class="col-md-2">
+              <p class="social">
+                <div class="box"> <a href="https://github.com/jf-utex?tab=repositories" title="" class="github"><i class="fa fa-github"></i></a>
+                </div>
+              </p>
+            </div>
+            <div class="col-md-1">
+              <p class="social">
+                <div class="box"><a href="mailto:jflaherty@utexas.edu" title="" class="email"><i class="fa fa-envelope"></i></a>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" id="email-phone" align="right">
+
+            <h2 class="heading">Email & Phone</h2>
+            <span class="name">Jeannie Flaherty</span>
+            <div class="category">Full Stack Developer</div>
+            <div>Email: <a href="mailto:jflaherty@utexas.edu?Subject=Hello!" class="email" >jflaherty@utexas.edu</a></div>
+            <div>Phone: <span class="tel">(737)222-0016</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <footer style="background-color: #111;" class="section-inverse">
     <div class="container">
-      <div class="row copyright">
-        <div class="col-md-6">
+      <div class="row copyright" align="center">
+        <div class="col-md-12">
           <!-- <img src="img/bearlogo.png" height:"150" alt="" class="img-responsive" ></a></div> -->
           <p>&copy;2017 JFlaherty Designs</p>
-
-        </div>
-        <div class="col-md-6">
         </div>
       </div>
     </div>
