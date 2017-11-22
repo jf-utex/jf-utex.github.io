@@ -70,7 +70,7 @@ section {
   margin: 0 auto;
 }
 .section-inverse {
-  color: #fff;
+  color: #000000;
 }
 .section-inverse h1,
 .section-inverse h2,
@@ -78,10 +78,10 @@ section {
 .section-inverse h4,
 .section-inverse h5,
 .section-inverse h6 {
-  color: #fff;
+  color: #000000;
 }
 .section-inverse .heading:after {
-  background: #fff;
+  background: #000000;
 }
 .box {
   margin-bottom: 30px;

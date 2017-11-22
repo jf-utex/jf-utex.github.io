@@ -88,8 +88,8 @@ function map() {
   ];
   map = new GMaps({
     el: '#map',
-    lat: -12.043333,
-    lng: -77.028333,
+    lat: 30.267153,
+    lng: -97.7430608,
     zoomControl: true,
     zoomControlOpt: {
       style: 'SMALL',
