@@ -2,21 +2,8 @@ $(function() {
   lightbox();
   sticky();
   utils();
-  map();
-  demo();
+
 });
-
-/* for demo purpose only - can be deleted */
-
-function demo() {
-  $('#page').change(function() {
-    if ($(this).val() !== '') {
-      window.location.href = $(this).val();
-    }
-
-    return false;
-  });
-}
 
 /* =========================================
  *  lightbox
@@ -37,108 +24,12 @@ function sticky() {
   $('.header').sticky();
 }
 
-/* =========================================
- *  map
- *  =======================================*/
-
-function map() {
-  var styles = [
-    {
-      featureType: 'landscape',
-      stylers: [{ saturation: -100 }, { lightness: 65 }, { visibility: 'on' }]
-    },
-    {
-      featureType: 'poi',
-      stylers: [
-        { saturation: -100 },
-        { lightness: 51 },
-        { visibility: 'simplified' }
-      ]
-    },
-    {
-      featureType: 'road.highway',
-      stylers: [{ saturation: -100 }, { visibility: 'simplified' }]
-    },
-    {
-      featureType: 'road.arterial',
-      stylers: [{ saturation: -100 }, { lightness: 30 }, { visibility: 'on' }]
-    },
-    {
-      featureType: 'road.local',
-      stylers: [{ saturation: -100 }, { lightness: 40 }, { visibility: 'on' }]
-    },
-    {
-      featureType: 'transit',
-      stylers: [{ saturation: -100 }, { visibility: 'simplified' }]
-    },
-    {
-      featureType: 'administrative.province',
-      stylers: [{ visibility: 'off' }]
-    },
-    {
-      featureType: 'water',
-      elementType: 'labels',
-      stylers: [{ visibility: 'on' }, { lightness: -25 }, { saturation: -100 }]
-    },
-    {
-      featureType: 'water',
-      elementType: 'geometry',
-      stylers: [{ hue: '#ffff00' }, { lightness: -25 }, { saturation: -97 }]
-    }
-  ];
-  map = new GMaps({
-    el: '#map',
-    lat: 30.267153,
-    lng: -97.7430608,
-    zoomControl: true,
-    zoomControlOpt: {
-      style: 'SMALL',
-      position: 'TOP_LEFT'
-    },
-    panControl: false,
-    streetViewControl: false,
-    mapTypeControl: false,
-    overviewMapControl: false,
-    scrollwheel: false,
-    draggable: false,
-    styles: styles
-  });
-
-  var image = 'img/marker.png';
-
-  map.addMarker({
-    lat: -12.043333,
-    lng: -77.028333,
-    icon: image /* ,
-         title: '',
-         infoWindow: {
-         content: '<p>HTML Content</p>'
-         }*/
-  });
-}
-
 function utils() {
   /* tooltips */
 
   $('[data-toggle="tooltip"]').tooltip();
 
-  /* click on the box activates the radio */
 
-  $('#checkout').on(
-    'click',
-    '.box.shipping-method, .box.payment-method',
-    function(e) {
-      var radio = $(this).find(':radio');
-      radio.prop('checked', true);
-    }
-  );
-  /* click on the box activates the link in it */
-
-  $('.box.clickable').on('click', function(e) {
-    window.location = $(this)
-      .find('a')
-      .attr('href');
-  });
   /* external links in new window*/
 
   $('.external').on('click', function(e) {
