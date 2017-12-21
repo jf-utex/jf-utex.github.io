@@ -1,9 +1,9 @@
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color: white;
 }
-
+/* #444 */
 p {
   line-height: 2rem;
 
